@@ -1,0 +1,87 @@
+<div class="container">
+  <div class="row justify-content-center mt-5">
+    <div class="col-lg-8 justify-content-center">
+        <div class="row justify-content-center mt-4">  
+          <div class="header-logo col-4"><img src="https://www.jotform.com/uploads/ugurg/form_files/Asset%2069%402x.63aaebbc664f28.45674937.png" alt="Class Registration" width="220" class="header-logo-left" style="pointer-events: none;">
+          </div>
+          <div class="col-8 text-center mb-3">
+            <h2>User Registration Form</h2>
+          </div> 
+          <hr>  
+        </div>
+        <form [formGroup]="myform" (ngSubmit)="mySumit()">  
+          <div class="row mb-3">
+          <div class="col-12">
+           <h5 class="text-muted">Full Name</h5>
+          </div>
+          <div class="col-4">
+             <input type="text" name="fname" class="form-control border-none" formControlName="fname">
+             <label for="fname">First name</label>
+          </div>
+          <div class="col-4">
+             <input type="text" name="mname" class="form-control border-none" formControlName="mname">
+             <label for="mname">Middel name</label>
+
+          </div>
+          <div class="col-4">
+             <input type="text" name="lname"  class="form-control border-none" formControlName="lname">
+             <label for="lname">Last name</label>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-6">
+           <h5 class="text-muted">Gender</h5>
+           <select name="gender" class="form-control" formControlName="gender">
+             <option disabled  selected>--select--</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+           </select>
+          </div>
+          <div class="col-6">
+           <h5 class="text-muted">E-mail</h5>
+           <input type="email" name="email" placeholder="ex@example.com" class="form-control" formControlName="email">
+           <label for="email">example@example.com</label>
+          </div>
+        </div>
+          <div class="row mb-3">
+            <div class="col-4">
+              <h5 class="text-muted">Phone No.</h5>
+             <input type="number" name="number" placeholder="+91" class="form-control" formControlName="phoneno">
+            </div>
+            <div class="col-4">
+              <h5 class="text-muted">Passwordd</h5>
+             <input type="password" name="password" placeholder="@******" class="form-control" formControlName="pass">
+            </div>
+            <div class="col-4">
+              <h5 class="text-muted">ConForme-Password</h5>
+             <input type="password" name="password" placeholder="ConF-Password" class="form-control">
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-12 mb-3">
+              <h5>Country</h5>
+               <input type="text" name="country" class="form-control" formControlName="country">
+            </div>
+            <div class="col-12 mb-3">
+              <h5>State</h5>
+               <input type="text" name="state" class="form-control" formControlName="state">
+            </div>
+            <div class="col-6">
+              <h5>City</h5>
+               <input type="text" name="city" class="form-control" formControlName="city">
+            </div>
+            <div class="col-6">
+              <h5>Pincode</h5>
+               <input type="number" name="pincode" class="form-control" formControlName="pincode">
+            </div>
+          </div>
+          <div class="row mt-4 ">
+            <div class="col-12 text-center ">
+              <Button  class="btn btn-outline-danger btn-lg mx-3">Back</Button>
+              <input type="submit" class="btn btn-outline-primary btn-lg mx-3" value="submit"/>
+            </div>
+          </div>
+        </form>
+    </div>
+  </div>
+</div>

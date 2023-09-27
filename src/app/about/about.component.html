@@ -1,0 +1,17 @@
+<p [id]="'a'">about works!</p>
+<h1 class="a">hello about</h1>
+<h1  [ngClass]="['a','b','c']">hello about</h1>
+<h1 [ngStyle]="{'color':'white',backgroundColor:'blue','text-align':'center'}">hello about</h1>
+<p    [ngStyle]="{'color':'white',backgroundColor:'blue','text-align':'center'}">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid unde cumque minus ea, atque dolorum quam cupiditate odio doloribus quidem eveniet nemo saepe eum quos vero nulla dignissimos ratione incidunt.</p>
+<p    [ngStyle]="['color:red','background:pink']">Lorem ipsum dolor sit amet consectetur adipisicing elit.aepe eum quos vero nulla dignissimos ratione incidunt.</p>
+<h1  [ngStyle]="{'color':'yellow','font-weight':'bold','text-align':'center'}">{{name|uppercase}}</h1>
+<h1  [ngStyle]="{'color':'green','font-weight':'bold','text-align':'center'}">{{name|lowercase}}</h1>
+<h1 [ngStyle]="{'color':'red','text-align':'center'}">{{a|currency:"INR"}}</h1>
+<h1 [ngStyle]="{'color':'red','text-align':'center'}">{{b|currency:"CAD"}}</h1>
+<h1 [ngStyle]="{'color':'red','text-align':'center'}">{{c|currency:"AUD"}}</h1>
+<h1 [ngStyle]="{'color':'red','text-align':'center'}">{{d|currency:"USD"}}</h1>
+<h2 [ngStyle]="['color:red','text-aling:center']">{{mydate|date:'BDT'}}</h2>
+<h2 [ngStyle]="['color:red','text-align:center']">{{date}}</h2>
+{{mydate}}
+
+
