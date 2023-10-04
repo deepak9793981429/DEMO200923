@@ -1,1 +1,15 @@
-<p>home works!</p>
+
+<h1 *ngIf="show2 else elseBlock">If Block</h1>
+<ng-template #elseBlock>Else Block</ng-template>
+<br><br>
+<ng-template [ngIf]="color=='red' ">Color Red</ng-template>
+<br><br>
+<ng-template [ngIf]="color1=='blue' ">Color Blue</ng-template>
+<br><br>
+<ng-template [ngIf]="color2=='green' ">Color Green</ng-template>
+<br><br>
+<h1 *ngIf="show; then thenBlock  else elseBlock1"></h1>
+<br><br>
+<ng-template   #thenBlock>then Block</ng-template>
+<ng-template #elseBlock1>Else Block</ng-template>
+<h1>{{'myform.fname'}}</h1>

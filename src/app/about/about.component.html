@@ -1,4 +1,4 @@
-<p [id]="'a'">about works!</p>
+<!-- <p [id]="'a'">about works!</p>
 <h1 class="a">hello about</h1>
 <h1  [ngClass]="['a','b','c']">hello about</h1>
 <h1 [ngStyle]="{'color':'white',backgroundColor:'blue','text-align':'center'}">hello about</h1>
@@ -13,5 +13,82 @@
 <h2 [ngStyle]="['color:red','text-aling:center']">{{mydate|date:'BDT'}}</h2>
 <h2 [ngStyle]="['color:red','text-align:center']">{{date}}</h2>
 {{mydate}}
+<h1>{{title|uppercase}}</h1>
+<h2>{{heading|lowercase}}</h2>
+<h3>{{dates|date}}</h3>
+<h3>{{dates|date:'fullDate'}}</h3>
+<h4>{{obj|json}}</h4>
+<h4>Student Name : {{obj.name|json|uppercase}}</h4>
+<h4>Student City : {{obj.city|json|uppercase}}</h4>
+<h4>{{0029990|number:'3.2-3'}}</h4>
+<h4>{{240|currency:'GBP'}}</h4>
+<h4 [ngStyle]="{'color':'red',fontSize:fontsize}">{{240|currency:'INR'}}</h4>
+<input type="text"  [(ngModel)]="myselect">{{myselect}} -->
+
+<div [ngClass]=" 'container-fluid' ">
+  <div [ngClass]="['row','justify-content-center','justify-content-center']">
+    <div [ngClass]="['col-12','justify-content-center','d-flex','mt-auto',''] ">
+      <div class="texthead my-auto">
+        <h2 [ngClass]="['text-light','text-bold']">About US</h2>
+        <a href="#"
+          [ngClass]="['mt-auto','text-uppercase','text-bold' ,' text-decoration-none' ,'txt','hovertxt'] ">Home</a>
+        <span [ngClass]="['text-light','px-3']">/</span>
+        <a href="#"
+          [ngClass]="['mt-auto','text-uppercase','text-bold','text-danger','text-decoration-none','txt'] ">About Us</a>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div>
+      <div>
+      </div>
+    </div>
+  </div>
+  <div [ngClass]="['container']">
+    <div [ngClass]="['row','justify-content-around','rowmt']">
+      <div [ngClass]="['col-md-6','align-center','my-auto']">
+        <h1 [id]="'h1txt'">ABOUT US</h1>
+        <div [ngClass]="['txt-p','aling-content-between']">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore aperiam fugit consequuntur voluptatibus ex
+            sint iure in, distinctio sed dolorem aspernatur veritatis repellendus dolorum voluptate, animi libero
+            officiis eveniet accusamus recusandae. Temporibus amet ducimus sapiente voluptatibus autem dolorem magnam
+            quas, porro suscipit. Quibusdam culpa asperiores exercitationem architecto quo distinctio sed dolorem!</p>
+
+        </div>
+        <div class="button">
+          <button type="button" [ngClass]="['btn','text-light']">BECOME A VALUNTEER</button>
+        </div>
+      </div>
+      <div [ngClass]="['col-md-6','justify-content-center']">
+
+        <div [ngClass]="['imgs','my-auto','mt-auto']">
+          <img src="./assets/image/about-image.webp" alt="" [ngClass]="['img-responsive','w-100']">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 
+
+<div [ngClass]="'container'">
+  <div [ngClass]="['row','justify-content-center'] ">
+    <div [ngClass]="['col-md-12']">
+      <table>
+        <tr>
+          <th>id</th>
+          <th>Name</th>
+          <th>E-mail</th>
+          <th>Gender</th>
+        </tr>
+        <tr *ngFor="let item of jsondata">
+          <td>{{item.id}}</td>
+          <td>{{item.name}}</td>
+          <td>{{item.email}}</td>
+          <td>{{item.gender}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
